@@ -9,7 +9,6 @@
 
 <img src ="sem-interface.jpeg"> </img>
 
-## Cadastro de Livros na Interface gráfica e com exception </h2>
-<img src = "..Interface-grafica/telas/tela-inicial.jpeg"> </img>
+## Cadastro de Livros na Interface gráfica e com exception
 
 
