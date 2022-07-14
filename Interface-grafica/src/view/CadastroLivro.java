@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JSeparator;
 import javax.swing.JTextField;
 
-//funcionou estranhamente
+
 
 public class CadastroLivro {
 
@@ -154,7 +154,7 @@ public class CadastroLivro {
 				 String editora = caixaEditora.getText();
 				 
 				 if(continueLoop==true) {
-						JOptionPane.showMessageDialog(botaoVisualizar,  "O livro cadastrado foi " +nomeLivro  + " do autor(a) " +nomeAutor + " e da Editora " + editora + " tem " + qtdPaginas + " p·ginas e foi publicado em " + anoPublicacao, null, JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(botaoVisualizar,  "O livro cadastrado foi " +nomeLivro  + " do autor(a) " +nomeAutor + " e da Editora " + editora + " tem " + qtdPaginas + " p√°ginas e foi publicado em " + anoPublicacao, null, JOptionPane.INFORMATION_MESSAGE);
 				 } else {
 					 JOptionPane.showMessageDialog(botaoVisualizar, "Ops!! Ocorreu um erro", null, JOptionPane.ERROR_MESSAGE);
 				 }
@@ -164,7 +164,7 @@ public class CadastroLivro {
 					 continueLoop=false;
 				 } catch (NumberFormatException e1) {
 					 e1.printStackTrace();
-					 JOptionPane.showMessageDialog(caixaPaginas, "VocÍ tentou algo inv·lido e gerou uma exception na qtd de P·ginas: "+ e1 +" \n Digite um valor INTEIRO v·lido!! ", null, JOptionPane.ERROR_MESSAGE); 
+					 JOptionPane.showMessageDialog(caixaPaginas, "Voc√™ tentou algo inv√°lido e gerou uma exception na qtd de P√°ginas: "+ e1 +" \n Digite um valor INTEIRO v√°lido!! ", null, JOptionPane.ERROR_MESSAGE); 
 				 } 
 				 try {
 					 Integer.valueOf(caixaPublicacao.getText());
@@ -172,7 +172,7 @@ public class CadastroLivro {
 				 } catch (NumberFormatException e2) {
 					 e2.printStackTrace();
 					
-					 JOptionPane.showMessageDialog(caixaPublicacao, "VocÍ tentou algo inv·lido e gerou uma exception na Publicacao: "+ e2 + "\n Digite um valor INTEIRO v·lido!!", null, JOptionPane.ERROR_MESSAGE);
+					 JOptionPane.showMessageDialog(caixaPublicacao, "Voc√™ tentou algo inv√°lido e gerou uma exception na Publicacao: "+ e2 + "\n Digite um valor INTEIRO v√°lido!!", null, JOptionPane.ERROR_MESSAGE);
 				 }
 				finally {
 	   					JOptionPane.showMessageDialog(botaoVisualizar, "O Finally foi executado com sucesso!", null, JOptionPane.INFORMATION_MESSAGE);
